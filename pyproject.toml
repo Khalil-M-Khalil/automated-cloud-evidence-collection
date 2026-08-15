@@ -1,0 +1,17 @@
+[project]
+name = "automated-evidence-collection"
+version = "0.1.0"
+description = "Read-only AWS and Azure evidence inventory collector for SOC 2 audit preparation."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+aws = ["boto3>=1.34,<2.0"]
+azure = ["azure-identity>=1.17,<2.0", "azure-mgmt-monitor>=6.0,<7.0", "azure-mgmt-resource>=23.0,<25.0"]
+test = ["pytest>=8.3,<9.0"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"

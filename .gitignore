@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+.aws/
+.azure/
+*.log
+reports/evidence_report.json
+reports/evidence_index.csv
+.DS_Store

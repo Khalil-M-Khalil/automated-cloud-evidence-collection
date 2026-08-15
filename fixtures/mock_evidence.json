@@ -1,0 +1,13 @@
+{
+  "metadata": {
+    "environment": "fictional-demo",
+    "account_or_subscription": "REDACTED-DEMO",
+    "note": "Synthetic fixture for tests and portfolio demonstration only."
+  },
+  "evidence": [
+    {"evidence_id": "AWS-IAM-001", "provider": "aws", "category": "identity", "control_area": "CC6.1", "source_api": "iam:GetCredentialReport", "status": "COLLECTED", "summary": "Synthetic IAM credential report metadata.", "payload": {"row_count": 12, "mfa_coverage_percent": 91.7, "access_key_rotation_overdue": 1}},
+    {"evidence_id": "AWS-LOG-001", "provider": "aws", "category": "logging", "control_area": "CC7.2", "source_api": "cloudtrail:DescribeTrails", "status": "COLLECTED", "summary": "Synthetic CloudTrail configuration metadata.", "payload": {"trail_count": 2, "multi_region": true, "log_file_validation": true, "is_logging": true}},
+    {"evidence_id": "AZ-ACT-001", "provider": "azure", "category": "logging", "control_area": "CC7.2", "source_api": "Microsoft.Insights/activityLogs", "status": "COLLECTED", "summary": "Synthetic Azure Activity Log metadata.", "payload": {"window_days": 7, "event_count": 184, "failed_operations": 3}},
+    {"evidence_id": "AZ-LOG-001", "provider": "azure", "category": "logging", "control_area": "CC7.2", "source_api": "Microsoft.Insights/diagnosticSettings", "status": "COLLECTED", "summary": "Synthetic Azure diagnostic settings metadata.", "payload": {"setting_count": 8, "resources_with_export": 7}}
+  ]
+}
